@@ -113,7 +113,7 @@ $loaded_profile = wp_parse_args( $loaded_profile, $this->checkbox_options );
 					<input type="text" name="auth_username" class="auth-username auth-credentials" placeholder="Username" autocomplete="off" />
 					<input type="password" name="auth_password" class="auth-password auth-credentials" placeholder="Password" autocomplete="off" />
 				</div>
-				<input class="button connect-button" type="submit" value="Connect" name="Connect" autocomplete="off" />
+				<input class="button connect-button" type="submit" value="<?php _e( 'Connect', 'wp-sync-db' ); ?>" name="Connect" autocomplete="off" />
 			</div>
 
 			<div class="notification-message warning-notice ssl-notice inline-message">
@@ -153,13 +153,13 @@ $loaded_profile = wp_parse_args( $loaded_profile, $this->checkbox_options );
 							<span class="sort-handle"></span>
 						</td>
 						<td class="old-replace-col">
-							<input type="text" size="40" name="replace_old[]" class="code" placeholder="Old value" autocomplete="off" />
+							<input type="text" size="40" name="replace_old[]" class="code" placeholder="<?php _e( 'Old value', 'wp-sync-db' ); ?>" autocomplete="off" />
 						</td>
 						<td class="arrow-col">
 							<span class="right-arrow">&rarr;</span>
 						</td>
 						<td class="replace-right-col">
-							<input type="text" size="40" name="replace_new[]" class="code" placeholder="New value" autocomplete="off" />
+							<input type="text" size="40" name="replace_new[]" class="code" placeholder="<?php _e( 'New Value', 'wp-sync-db' ); ?>" autocomplete="off" />
 							<span style="display: none;" class="replace-remove-row" data-profile-id="0"></span>
 						</td>
 					</tr>
@@ -169,13 +169,13 @@ $loaded_profile = wp_parse_args( $loaded_profile, $this->checkbox_options );
 								<span class="sort-handle"></span>
 							</td>
 							<td class="old-replace-col">
-								<input type="text" size="40" name="replace_old[]" class="code" id="old-url" placeholder="Old URL" value="<?php echo preg_replace( '#^https?:#', '', htmlentities( home_url() ) ); ?>" autocomplete="off" />
+								<input type="text" size="40" name="replace_old[]" class="code" id="old-url" placeholder="<?php _e( 'Old URL', 'wp-sync-db' ); ?>" value="<?php echo preg_replace( '#^https?:#', '', htmlentities( home_url() ) ); ?>" autocomplete="off" />
 							</td>
 							<td class="arrow-col">
 								<span class="right-arrow">&rarr;</span>
 							</td>
 							<td class="replace-right-col">
-								<input type="text" size="40" name="replace_new[]" class="code" id="new-url" placeholder="New URL" autocomplete="off" />
+								<input type="text" size="40" name="replace_new[]" class="code" id="new-url" placeholder="<?php _e( 'New URL', 'wp-sync-db' ); ?>" autocomplete="off" />
 								<!-- <span class="replace-remove-row"></span> -->
 								<span style="display: none;" class="replace-remove-row" data-profile-id="0"></span>
 							</td>
@@ -185,13 +185,13 @@ $loaded_profile = wp_parse_args( $loaded_profile, $this->checkbox_options );
 								<span class="sort-handle"></span>
 							</td>
 							<td class="old-replace-col">
-								<input type="text" size="40" name="replace_old[]" class="code" id="old-path" placeholder="Old file path" value="<?php echo htmlentities( $this->absolute_root_file_path ); ?>" autocomplete="off" />
+								<input type="text" size="40" name="replace_old[]" class="code" id="old-path" placeholder="<?php _e( 'Old file path', 'wp-sync-db' ); ?>" value="<?php echo htmlentities( $this->absolute_root_file_path ); ?>" autocomplete="off" />
 							</td>
 							<td class="arrow-col">
 								<span class="right-arrow">&rarr;</span>
 							</td>
 							<td class="replace-right-col">
-								<input type="text" size="40" name="replace_new[]" class="code" id="new-path" placeholder="New file path" autocomplete="off" />
+								<input type="text" size="40" name="replace_new[]" class="code" id="new-path" placeholder="<?php _e( 'New file path', 'wp-sync-db' ); ?>" autocomplete="off" />
 								<span style="display: none;" class="replace-remove-row" data-profile-id="0"></span>
 							</td>
 						</tr>
@@ -203,13 +203,13 @@ $loaded_profile = wp_parse_args( $loaded_profile, $this->checkbox_options );
 									<span class="sort-handle"></span>
 								</td>
 								<td class="old-replace-col">
-									<input type="text" size="40" name="replace_old[]" class="code" placeholder="Old value" value="<?php echo $replace_old; ?>" autocomplete="off" />
+									<input type="text" size="40" name="replace_old[]" class="code" placeholder="<?php _e( 'Old Value', 'wp-sync-db' ); ?>" value="<?php echo $replace_old; ?>" autocomplete="off" />
 								</td>
 								<td class="arrow-col">
 									<span class="right-arrow">&rarr;</span>
 								</td>
 								<td class="replace-right-col">
-									<input type="text" size="40" name="replace_new[]" class="code" placeholder="New value" value="<?php echo ( isset( $loaded_profile['replace_new'][$i] ) ? $loaded_profile['replace_new'][$i] : '' ); ?>" autocomplete="off" />
+									<input type="text" size="40" name="replace_new[]" class="code" placeholder="<?php _e( 'New value', 'wp-sync-db' ); ?>" value="<?php echo ( isset( $loaded_profile['replace_new'][$i] ) ? $loaded_profile['replace_new'][$i] : '' ); ?>" autocomplete="off" />
 									<span style="display: none;" class="replace-remove-row" data-profile-id="0"></span>
 								</td>
 							</tr>
@@ -218,7 +218,7 @@ $loaded_profile = wp_parse_args( $loaded_profile, $this->checkbox_options );
 						endforeach; ?>
 					<?php endif; ?>
 							<tr class="pin">
-								<td colspan="4"><a class="button add-row">Add Row</a></td>
+								<td colspan="4"><a class="button add-row"><?php _e( 'Add Row', 'wp-sync-db' ); ?></a></td>
 							</tr>
 					</tbody>
 				</table>
@@ -232,7 +232,7 @@ $loaded_profile = wp_parse_args( $loaded_profile, $this->checkbox_options );
 				<?php $tables = $this->get_table_sizes(); ?>
 				<div class="header-expand-collapse clearfix">
 					<div class="expand-collapse-arrow collapsed">&#x25BC;</div>
-					<div class="option-heading tables-header">Tables</div>
+					<div class="option-heading tables-header"><?php _e( 'Tables', 'wp-sync-db' ); ?></div>
 				</div>
 
 				<div class="indent-wrap expandable-content table-select-wrap" style="display: none;">
@@ -338,7 +338,7 @@ $loaded_profile = wp_parse_args( $loaded_profile, $this->checkbox_options );
 						<li>
 							<label for="exclude-transients">
 							<input id="exclude-transients" type="checkbox" value="1" autocomplete="off" name="exclude_transients"<?php $this->maybe_checked( $loaded_profile['exclude_transients'] ); ?> />
-							Exclude <a href="https://codex.wordpress.org/Transients_API" target="_blank">transients</a> (temporary cached data)
+							<?php _e( 'Exclude', 'wp-sync-db' ); ?> <a href="https://codex.wordpress.org/Transients_API" target="_blank"><?php _e( 'transients', 'wp-sync-db' ); ?></a> <?php _e( '(temporary cached data)', 'wp-sync-db' ); ?>
 							</label>
 						</li>
 					</ul>
@@ -453,7 +453,7 @@ $loaded_profile = wp_parse_args( $loaded_profile, $this->checkbox_options );
 			<p class="migrate-db">
 				<input type="hidden" class="remote-json-data" name="remote_json_data" autocomplete="off" />
 				<input class="button-primary migrate-db-button" type="submit" value="Migrate DB" name="Submit" autocomplete="off" />
-				<input class="button save-settings-button" type="submit" value="Save Profile" name="submit_save_profile" autocomplete="off" />
+				<input class="button save-settings-button" type="submit" value="<?php _e( 'Save Profile', 'wp-sync-db' ); ?>" name="submit_save_profile" autocomplete="off" />
 			</p>
 
 		</div>

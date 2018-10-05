@@ -21,8 +21,8 @@ $videos = array(
 
 <div class="help-tab content-tab">
 	<div class="support">
-		<h3>Support</h3>
-		<p>Please report bugs or ask questions in the <a href="https://github.com/wp-sync-db/wp-sync-db/issues">GitHub Issue Tracker</a>.</p>
+		<h3><?php _e( 'Support', 'wp-sync-db' ); ?></h3>
+		<p><?php _e( 'Please report bugs or ask questions in the', 'wp-sync-db' ); ?> <a href="https://github.com/wp-sync-db/wp-sync-db/issues"><?php _e( 'GitHub Issue Tracker', 'wp-sync-db' ); ?></a>.</p>
 	</div>
 	<div class="debug">
 		<h3><?php _e( 'Diagnostic Info &amp; Error Log', 'wp-sync-db' ); ?></h3>

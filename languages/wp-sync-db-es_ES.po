@@ -1,24 +1,22 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"Project-Id-Version: WP Sync DB\n"
-"POT-Creation-Date: 2018-10-05 03:14-0300\n"
-"PO-Revision-Date: 2018-10-05 00:40-0300\n"
+"Project-Id-Version: WP Sync DB 1.6.1\n"
+"POT-Creation-Date: 2018-10-05 03:12-0300\n"
+"PO-Revision-Date: 2018-10-05 03:13-0300\n"
 "Last-Translator: Lunestudio <info@lunestudio.com.ar>\n"
 "Language-Team: Lunestudio <info@lunestudio.com.ar>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.13\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-WPHeader: wp-sync-db.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: class/wpsdb-addon.php:57
 #, php-format
@@ -27,12 +25,17 @@ msgid ""
 "You currently have %3$s installed. <strong><a href=\"%4$s\">Update Now</a></"
 "strong>"
 msgstr ""
+"La versión de %1$s que ha instalado requiere la versión %2$s de WP Sync DB. "
+"Actualmente tienes %3$s instalado. <strong><a href=\"%4$s\">Actualizar "
+"Ahora</a></strong>"
 
 #: class/wpsdb-base.php:37
 msgid ""
 "Invalid content verification signature, please verify the connection "
 "information on the remote site and try again."
 msgstr ""
+"La Clave API no es válida, verifique la información de conexión en el sitio "
+"remoto y vuelva a intentarlo."
 
 #: class/wpsdb-base.php:126
 #, php-format
@@ -40,11 +43,13 @@ msgid ""
 "The connection to the remote server has timed out, no changes have been "
 "committed. (#134 - scope: %s)"
 msgstr ""
+"La conexión con el servidor remoto ha caducado, no se confirmaron los "
+"cambios. (#134 - scope: %s)"
 
 #: class/wpsdb-base.php:129
 #, php-format
 msgid "We could not find: %s. Are you sure this is the correct URL?"
-msgstr ""
+msgstr "No pudimos encontrar: %s. ¿Estás seguro de que es la URL correcta?"
 
 #: class/wpsdb-base.php:134
 msgid ""
@@ -53,6 +58,9 @@ msgid ""
 "server, it would be impossible for this server to contact your local "
 "environment."
 msgstr ""
+"Parece que está intentando traer la base de datos de un entorno local. Esto "
+"no funcionará si <u>este sitio</u> está ubicado en un servidor remoto, ya "
+"que sería imposible que este servidor se comunique con su entorno local."
 
 #: class/wpsdb-base.php:137
 msgid ""
@@ -61,6 +69,9 @@ msgid ""
 "server, it would be impossible for this server to contact your local "
 "environment."
 msgstr ""
+"Parece que está intentando enviar la base de datos de un entorno local. Esto "
+"no funcionará si <u>este sitio</u> está ubicado en un servidor remoto, ya "
+"que sería imposible que este servidor se comunique con su entorno local."
 
 #: class/wpsdb-base.php:142
 #, php-format
@@ -68,12 +79,16 @@ msgid ""
 "The connection failed, an unexpected error occurred, please contact support. "
 "(#121 - scope: %s)"
 msgstr ""
+"Falló la conexión, se produjo un error inesperado. Por favor, póngase en "
+"contacto con el soporte. (#121 - scope: %s)"
 
 #: class/wpsdb-base.php:152
 msgid ""
 "The remote site is protected with Basic Authentication. Please enter the "
 "username and password above to continue. (401 Unauthorized)"
 msgstr ""
+"El sitio remoto está protegido con autenticación básica. Por favor, ingrese "
+"el nombre de usuario y la contraseña para continuar. (401 no autorizado)"
 
 #: class/wpsdb-base.php:157
 #, php-format
@@ -81,12 +96,16 @@ msgid ""
 "Unable to connect to the remote server, please check the connection details "
 "- %1$s %2$s (#129 - scope: %3$s)"
 msgstr ""
+"No se puede conectar con el servidor remoto, verifique los detalles de la "
+"conexión - %1$s %2$s (#129 - scope: %3$s)"
 
 #: class/wpsdb-base.php:166
 msgid ""
 "There was a problem with the AJAX request, we were expecting a serialized "
 "response, instead we received:<br />"
 msgstr ""
+"Hubo un problema con la solicitud de AJAX, esperábamos una respuesta "
+"serializada, en su lugar recibimos:<br />"
 
 #: class/wpsdb-base.php:174
 #, php-format
@@ -94,36 +113,38 @@ msgid ""
 "WP Sync DB does not seem to be installed or active on the remote site. (#131 "
 "- scope: %s)"
 msgstr ""
+"WP Sync DB no parece estar instalado o activo en el sitio remoto. (#131 - "
+"scope: %s)"
 
 #: class/wpsdb-base.php:387
 #, php-format
 msgid "Invalid nonce for: %s"
-msgstr ""
+msgstr "Nonce invalido para: %s"
 
 #: class/wpsdb-base.php:394
 #, php-format
 msgid "Access denied for: %s"
-msgstr ""
+msgstr "Acceso denegado para: %s"
 
 #: class/wpsdb.php:311 class/wpsdb.php:1323
 msgid "Settings"
-msgstr ""
+msgstr "Opciones"
 
 #: class/wpsdb.php:372
 msgid "ext/mysqli"
-msgstr ""
+msgstr "ext/mysqli"
 
 #: class/wpsdb.php:376
 msgid "WP Memory Limit"
-msgstr ""
+msgstr "Límite de memoria de WP"
 
 #: class/wpsdb.php:619
 msgid "Could not upload the SQL to the server. (#135)"
-msgstr ""
+msgstr "No se pudo cargar SQL en el servidor. (#135)"
 
 #: class/wpsdb.php:624
 msgid "Could not read the SQL file we uploaded to the server. (#136)"
-msgstr ""
+msgstr "No se pudo leer el archivo SQL que cargamos en el servidor. (#136)"
 
 #: class/wpsdb.php:640
 msgid ""
@@ -131,6 +152,9 @@ msgid ""
 "connections. You can change this in the \"settings\" tab on the remote site. "
 "(#133)"
 msgstr ""
+"La conexión se realizó correctamente, pero el sitio remoto está configurado "
+"para rechazar las conexiones de inserción. Puede cambiar esto en la pestaña "
+"\"opciones\" d-el sitio remoto. (#133)"
 
 #: class/wpsdb.php:857
 msgid ""
@@ -138,20 +162,25 @@ msgid ""
 "connections. You can change this in the \"settings\" tab on the remote site. "
 "(#132)"
 msgstr ""
+"La conexión se realizó correctamente, pero el sitio remoto está configurado "
+"para rechazar las conexiones de extracción. Puede cambiar esto en la pestaña "
+"\"opciones\" del sitio remoto. (#132)"
 
 #: class/wpsdb.php:926 class/wpsdb.php:1091
 msgid ""
 "Failed attempting to unserialize the response from the remote server. Please "
 "contact support."
 msgstr ""
+"Error al intentar deserializar la respuesta del servidor remoto. Por favor, "
+"póngase en contacto con el soporte."
 
 #: class/wpsdb.php:975 class/wpsdb.php:1139
 msgid "pull"
-msgstr ""
+msgstr "Traer"
 
 #: class/wpsdb.php:978 class/wpsdb.php:1142
 msgid "push"
-msgstr ""
+msgstr "Empujar"
 
 #: class/wpsdb.php:980
 #, php-format
@@ -160,10 +189,13 @@ msgid ""
 "connections. You can change this in the \"settings\" tab on the remote site. "
 "(#110)"
 msgstr ""
+"La conexión se realizó correctamente, pero el sitio remoto está configurado "
+"para rechazar las conexiones %s. Puede cambiar esto en la pestaña \"opciones"
+"\" del sitio remoto. (#110)"
 
 #: class/wpsdb.php:1130
 msgid "Try again?"
-msgstr ""
+msgstr "¿Intentar nuevamente?"
 
 #: class/wpsdb.php:1144
 #, php-format
@@ -172,14 +204,18 @@ msgid ""
 "connections. You can change this in the \"settings\" tab on the remote site. "
 "(#122) <a href=\"#\" class=\"try-again js-action-link\">Try again?</a>"
 msgstr ""
+"La conexión se realizó correctamente, pero el sitio remoto está configurado "
+"para rechazar las conexiones %s. Puede cambiar esto en la pestaña \"opciones"
+"\" del sitio remoto. (#122) <a href=\"#\" class=\"try-again js-action-link"
+"\">¿Intentarlo de nuevo?</a>"
 
 #: class/wpsdb.php:1323
 msgid "Migrate"
-msgstr ""
+msgstr "Migrar"
 
 #: class/wpsdb.php:1323
 msgid "Help"
-msgstr ""
+msgstr "Ayuda"
 
 #: class/wpsdb.php:1343
 #, php-format
@@ -187,6 +223,9 @@ msgid ""
 "The version of the %1$s addon you have installed%2$s is out-of-date and will "
 "not work with this version WP Sync DB. <a href=\"%3$s\">Update Now</a>"
 msgstr ""
+"La versión del complemento %1$s que ha instalado %2$s está desactualizada y "
+"no funcionará con esta versión WP Sync DB. <a href=\"%3$s\">Actualizar "
+"Ahora</a>"
 
 #: class/wpsdb.php:1352
 msgid ""
@@ -197,11 +236,19 @@ msgid ""
 "plugin however, so you're free to cross your fingers and hope for the best. "
 "However, if you have trouble, we can't help you until you turn off safe mode."
 msgstr ""
+"<strong>Modo seguro de PHP habilitado</strong> &mdash; No admitimos "
+"oficialmente la ejecución de este complemento en modo seguro porque "
+"<code>set_time_limit()</code> queda sin efecto. Por lo tanto, no podemos "
+"extender el tiempo de ejecución del script y asegurarnos de que no se agote "
+"antes de que finalice la migración. Sin embargo, no hemos deshabilitado el "
+"complemento, así que puedes cruzar los dedos y esperar lo mejor. Si tiene "
+"problemas, no podremos ayudarlo hasta que desactive el modo seguro."
 
 #: class/wpsdb.php:1354 class/wpsdb.php:1373
 #, php-format
 msgid "Your current PHP run time limit is set to %s seconds."
 msgstr ""
+"Su límite de tiempo de ejecución de PHP actual se establece en %s segundos."
 
 #: class/wpsdb.php:1362
 #, php-format
@@ -211,6 +258,11 @@ msgid ""
 "that you use Firefox or a Webkit-based browser like Chrome or Safari "
 "instead. If this is a problem for you, please let us know."
 msgstr ""
+"<strong>Internet Explorer no es compatible</strong> &mdash; Menos del 2% de "
+"nuestros clientes utilizan IE, por lo que hemos decidido no invertir tiempo "
+"en respaldarlo. Le pedimos que use Firefox o un navegador basado en Webkit "
+"como Chrome o Safari en su lugar. Si esto es un problema para usted, "
+"háganoslo saber."
 
 #: class/wpsdb.php:1371
 msgid ""
@@ -220,178 +272,202 @@ msgid ""
 "however, so you're free to cross your fingers and hope for the best. You may "
 "want to contact your web host to enable this function."
 msgstr ""
+"<strong>Función PHP desactivada</strong> &mdash; La función "
+"<code>set_time_limit()</code> está actualmente deshabilitada en su servidor. "
+"Utilizamos esta función para garantizar que la migración no se agote. Sin "
+"embargo, no hemos deshabilitado el complemento, así que puedes cruzar los "
+"dedos y esperar lo mejor. Sin embargo, es posible que desee ponerse en "
+"contacto con su proveedor de alojamiento web para solicitar que esta función "
+"sea habilitada."
 
 #: class/wpsdb.php:1546
 msgid ""
 "Failed to retrieve table structure, please ensure your database is online. "
 "(#125)"
 msgstr ""
+"Error al recuperar la estructura de la tabla, asegúrese de que su base de "
+"datos esté en línea. (#125)"
 
 #: class/wpsdb.php:1563
 #, php-format
 msgid "Delete any existing table %s"
-msgstr ""
+msgstr "Eliminar cualquier tabla existente %s"
 
 #: class/wpsdb.php:1577
 #, php-format
 msgid "Table structure of table %s"
-msgstr ""
+msgstr "Estructura de la tabla %s"
 
 #: class/wpsdb.php:1584
 msgid ""
 "Failed to generate the create table query, please ensure your database is "
 "online. (#126)"
 msgstr ""
+"Error al generar la consulta de creación de tabla, asegúrese de que su base "
+"de datos esté en línea. (#126)"
 
 #: class/wpsdb.php:1620
 #, php-format
 msgid "Data contents of table %s"
-msgstr ""
+msgstr "Contenidos de la tabla %s"
 
 #: class/wpsdb.php:1908
 #, php-format
 msgid "End of data contents of table %s"
-msgstr ""
+msgstr "Fin de los contenidos de la tabla  %s"
 
 #: class/wpsdb.php:2038
 msgid "WordPress MySQL database migration"
-msgstr ""
+msgstr "Migración de base de datos MySQL en WordPress"
 
 #: class/wpsdb.php:2040
 #, php-format
 msgid "Generated: %s"
-msgstr ""
+msgstr "Generado: %s"
 
 #: class/wpsdb.php:2041
 #, php-format
 msgid "Hostname: %s"
-msgstr ""
+msgstr "Nombre del Host: %s"
 
 #: class/wpsdb.php:2042
 #, php-format
 msgid "Database: %s"
-msgstr ""
+msgstr "Base de Datos: %s"
 
 #: class/wpsdb.php:2072
 msgid "Failed to write the gzipped SQL data to the file. (#127)"
-msgstr ""
+msgstr "Error al  comprimidos los datos SQL en el archivo gzip. (#127)"
 
 #: class/wpsdb.php:2078
 msgid "Failed to write the SQL data to the file. (#128)"
-msgstr ""
+msgstr "Error al escribir los datos de SQL en el archivo. (#128)"
 
 #: class/wpsdb.php:2229
 msgid ""
 "A problem occurred when trying to change the maximum request size, please "
 "try again."
 msgstr ""
+"Se ha producido un problema al intentar cambiar el tamaño máximo de la "
+"solicitud. Por favor, inténtalo de nuevo."
 
 #: class/wpsdb.php:2230
 msgid "Establishing connection to remote server, please wait"
-msgstr ""
+msgstr "Estableciendo conexión al servidor remoto. ¡Por favor, espere!"
 
 #: class/wpsdb.php:2231
 msgid ""
 "A problem occurred when attempting to connect to the local server, please "
 "check the details and try again."
 msgstr ""
+"Se produjo un problema al intentar conectarse al servidor local. Verifique "
+"los detalles e intente nuevamente."
 
 #: class/wpsdb.php:2232
 msgid ""
 "An error occurred when trying to clear the debug log. Please contact "
 "support. (#132)"
 msgstr ""
+"Se ha producido un error al intentar borrar el registro de depuración. Por "
+"favor, póngase en contacto con el soporte. (#132)"
 
 #: class/wpsdb.php:2233
 msgid ""
 "An error occurred when trying to update the debug log. Please contact "
 "support. (#133)"
 msgstr ""
+"Se ha producido un error al intentar actualizar el registro de depuración. "
+"Por favor, póngase en contacto con el soporte. (#133)"
 
 #: class/wpsdb.php:2234
 msgid "Migrate DB & Save"
-msgstr ""
+msgstr "Migrar BD y Guardar"
 
 #: class/wpsdb.php:2235
 msgid "Migrate DB"
-msgstr ""
+msgstr "Migrar BD"
 
 #: class/wpsdb.php:2236
 msgid "Please select at least one table to migrate."
-msgstr ""
+msgstr "Por favor seleccione al menos una tabla para migrar."
 
 #: class/wpsdb.php:2237
 msgid "Please enter a name for your migration profile."
-msgstr ""
+msgstr "Por favor ingrese un nombre para su perfil de migración."
 
 #: class/wpsdb.php:2238
 msgid ""
 "An error occurred when attempting to save the migration profile. Please see "
 "the Help tab for details on how to request support. (#118)"
 msgstr ""
+"Se ha producido un error al intentar guardar el perfil de migración. "
+"Consulte la pestaña de Ayuda para obtener detalles sobre cómo solicitar "
+"asistencia. (#118)"
 
 #: class/wpsdb.php:2239
 msgid "Exporting complete"
-msgstr ""
+msgstr "Completando la exportación"
 
 #: class/wpsdb.php:2240
 msgid "Exporting, please wait..."
-msgstr ""
+msgstr "Exportando, por favor espere..."
 
 #: class/wpsdb.php:2241
 msgid "please wait..."
-msgstr ""
+msgstr "Por favor, espere..."
 
 #: class/wpsdb.php:2242
 msgid "complete"
-msgstr ""
+msgstr "completo"
 
 #: class/wpsdb.php:2243
 msgid "Migration failed"
-msgstr ""
+msgstr "Falló la migración"
 
 #: class/wpsdb.php:2244
 msgid "Backing up"
-msgstr ""
+msgstr "Creando copia de seguridad"
 
 #: class/wpsdb.php:2245
 msgid "Migrating"
-msgstr ""
+msgstr "Migrando"
 
 #: class/wpsdb.php:2246
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: class/wpsdb.php:2247
 msgid "Response"
-msgstr ""
+msgstr "Respuesta"
 
 #: class/wpsdb.php:2248
 msgid ""
 "A problem occurred when attempting to process the following table (#113)"
-msgstr ""
+msgstr "Ocurrió un problema al intentar procesar la siguiente tabla (# 113)"
 
 #: class/wpsdb.php:2249
 msgid ""
 "A problem occurred when processing the following table. We were expecting a "
 "response in JSON format but instead received an empty response."
 msgstr ""
+"Se produjo un problema al procesar la tabla siguiente. Esperaban una "
+"respuesta en formato JSON pero en cambio recibió una respuesta vacía."
 
 #: class/wpsdb.php:2250
 msgid "Migration completed with some errors"
-msgstr ""
+msgstr "Migración completada con algunos errores"
 
 #: class/wpsdb.php:2251
 msgid "Migration complete, your backup is located at:"
-msgstr ""
+msgstr "Migración completada, la copia de seguridad se encuentra en:"
 
 #: class/wpsdb.php:2252
 msgid "A problem occurred when finalizing the backup. (#132)"
-msgstr ""
+msgstr "Hubo un problema al finalizar la copia de seguridad. (#132)"
 
 #: class/wpsdb.php:2253 template/settings.php:76 template/settings.php:90
 msgid "Saved"
-msgstr ""
+msgstr "Guardado"
 
 #: class/wpsdb.php:2254
 msgid ""
@@ -399,24 +475,35 @@ msgid ""
 "connect. You will need to update those sites with the newly generated API "
 "key. Do you wish to continue?"
 msgstr ""
+"Cualquier configuración de sitios que utilice la clave API actual ya no será "
+"capaz de conectarse. Usted tendrá que actualizar esos sitios con la nueva "
+"API key. ¿Desea continuar?"
 
 #: class/wpsdb.php:2255
 msgid ""
 "An error occurred when trying to generate the API key. Please see the Help "
 "tab for details on how to request support. (#105)"
 msgstr ""
+"Se ha producido un error al intentar generar la clave secreta. Por favor, "
+"consulta la pestaña Ayuda para obtener más información sobre cómo solicitar "
+"soporte. (#105)"
 
 #: class/wpsdb.php:2256
 msgid ""
 "You are removing the following migration profile. This cannot be undone. Do "
 "you wish to continue?"
 msgstr ""
+"Estás eliminando el siguiente perfil de migración. Esto no se puede "
+"deshacer. ¿Desea continuar?"
 
 #: class/wpsdb.php:2257
 msgid ""
 "An error occurred when trying to delete the profile. Please see the Help tab "
 "for details on how to request support. (#106)"
 msgstr ""
+"Se ha producido un error al intentar eliminar el perfil. Por favor, consulta "
+"la pestaña Ayuda para obtener más información sobre cómo solicitar soporte. "
+"(#106)"
 
 #: class/wpsdb.php:2258
 msgid ""
@@ -425,16 +512,21 @@ msgid ""
 "Please refresh this page to see an accurate list of the currently available "
 "migration profiles."
 msgstr ""
+"El perfil de migración seleccionado no se pudo eliminar porque no se "
+"encontró. Actualice esta página para ver una lista precisa de los perfiles "
+"de migración disponibles actualmente."
 
 #: class/wpsdb.php:2259
 msgid ""
 "If you change the connection details, you will lose any replaces and table "
 "selections you have made below. Do you wish to continue?"
 msgstr ""
+"Si cambia los datos de conexión, usted perderá las selecciones de reemplazos "
+"y tablas que ya haya hecho. ¿Desea continuar?"
 
 #: class/wpsdb.php:2260 template/migrate.php:125
 msgid "Please enter the connection information above to continue."
-msgstr ""
+msgstr "Por favor introduzca la información de conexión para continuar."
 
 #: class/wpsdb.php:2261
 msgid ""
@@ -442,12 +534,17 @@ msgid ""
 "problem persists, please see the Help tab for details on how to request "
 "support. (#108)"
 msgstr ""
+"Se ha producido un error al intentar guardar la configuración. Vuelva a "
+"intentarlo. Si el problema persiste, consulte la pestaña Ayuda para obtener "
+"detalles sobre cómo solicitar soporte. (#108)"
 
 #: class/wpsdb.php:2262
 msgid ""
 "The connection information appears to be missing, please enter it to "
 "continue."
 msgstr ""
+"La información de conexión parece perdida, por favor escríbela nuevamente "
+"para continuar."
 
 #: class/wpsdb.php:2263
 msgid ""
@@ -455,12 +552,16 @@ msgid ""
 "lines. The first being the remote server's URL and the second being the "
 "secret key."
 msgstr ""
+"La información de conexión parece ser incorrecta, debe tener dos líneas. La "
+"primera es la URL del servidor remoto y la segunda es la clave secreta."
 
 #: class/wpsdb.php:2264
 msgid ""
 "The URL on the first line appears to be invalid, please check it and try "
 "again."
 msgstr ""
+"La URL en la primera línea parece no ser válida, verifíquela e intente "
+"nuevamente."
 
 #: class/wpsdb.php:2265
 msgid ""
@@ -468,208 +569,226 @@ msgid ""
 "character string that consists of letters, numbers and special characters "
 "only."
 msgstr ""
+"La clave secreta en la segunda línea parece ser inválida. Debe ser una "
+"cadena de 32 caracteres que consta de letras, números y caracteres "
+"especiales solamente."
 
 #: class/wpsdb.php:2266
 msgid ""
 "It appears you've entered the URL for this website, you need to provide the "
 "URL of the remote website instead."
 msgstr ""
+"Parece que has introducido la URL de la página web actual. Es necesario "
+"proporcionar la URL del sitio remoto en su lugar."
 
 #: class/wpsdb.php:2267
 msgid ""
 "It appears you've entered the secret key for this website, you need to "
 "provide the secret key for the remote website instead."
 msgstr ""
+"Parece que has introducido la clave secreta de este sitio web. Es necesario "
+"proporcionar la clave secreta del sitio remoto en su lugar."
 
 #: class/wpsdb.php:2268 template/migrate-progress.php:8
 msgid "Time Elapsed:"
-msgstr ""
+msgstr "Tiempo transcurrido:"
 
 #: class/wpsdb.php:2269 template/migrate-progress.php:19
 msgid "Pause"
-msgstr ""
+msgstr "Pausar"
 
 #: class/wpsdb.php:2270
 msgid "Migration Paused"
-msgstr ""
+msgstr "Migración pausada"
 
 #: class/wpsdb.php:2271
 msgid "Resume"
-msgstr ""
+msgstr "Continuar"
 
 #: class/wpsdb.php:2272
 msgid "Completing current request"
-msgstr ""
+msgstr "Completando solicitud actual"
 
 #: class/wpsdb.php:2273
 msgid "Cancelling migration"
-msgstr ""
+msgstr "Cancelando migración"
 
 #: class/wpsdb.php:2274
 msgid "Paused"
-msgstr ""
+msgstr "Pausar"
 
 #: class/wpsdb.php:2275
 msgid "Removing the local MySQL export file"
-msgstr ""
+msgstr "Eliminando el archivo local de MySQL"
 
 #: class/wpsdb.php:2276
 msgid "Removing the local backup MySQL export file"
-msgstr ""
+msgstr "Eliminando el archivo de copia de seguridad de MySQL local"
 
 #: class/wpsdb.php:2277
 msgid "Removing the local temporary tables"
-msgstr ""
+msgstr "Eliminando las tablas temporales locales"
 
 #: class/wpsdb.php:2278
 msgid "Removing the remote backup MySQL export file"
-msgstr ""
+msgstr "Eliminando el archivo de copia de seguridad de MySQL remota"
 
 #: class/wpsdb.php:2279
 msgid "Removing the remote temporary tables"
-msgstr ""
+msgstr "Eliminando las tablas temporales remotas"
 
 #: class/wpsdb.php:2280
 msgid "Migration cancellation failed"
-msgstr ""
+msgstr "Falló la cancelación de la migración"
 
 #: class/wpsdb.php:2281
 msgid ""
 "A problem occurred while cancelling the migration, you may have to manually "
 "delete some temporary files / tables."
 msgstr ""
+"Se produjo un problema al cancelar la migración, quizás tenga que eliminar "
+"manualmente archivos temporales o tablas."
 
 #: class/wpsdb.php:2282
 msgid "Migration cancelled"
-msgstr ""
+msgstr "Migración cancelada"
 
 #: class/wpsdb.php:2316
 msgid "Could not find the file to download:"
-msgstr ""
+msgstr "No se encuentra el archivo para descargar:"
 
 #: class/wpsdb.php:2499
 msgid "MySQL export file not found."
-msgstr ""
+msgstr "Archivo de exportación de MySQL no encontrado."
 
 #: template/help.php:4
 msgid "Feature Walkthrough"
-msgstr ""
+msgstr "Tutorial de funciones"
 
 #: template/help.php:5
 msgid ""
 "A brief walkthrough of the WP Sync DB plugin showing all of the different "
 "options and explaining them."
 msgstr ""
+"Un breve recorrido por el plugin WP Sync DB que muestra todas las opciones y "
+"las explica."
 
 #: template/help.php:8
 msgid "Pulling Live Data Into Your Local Development&nbsp;Environment"
-msgstr ""
+msgstr "Cómo traer los datos online a su entorno de desarrollo local"
 
 #: template/help.php:9
 msgid ""
 "This screencast demonstrates how you can pull data from a remote, live "
 "WordPress install and update the data in your local development environment."
 msgstr ""
+"Este screencast demuestra cómo puede extraer datos de una instalación remota "
+"de WordPress en vivo y actualizar los datos en su entorno de desarrollo "
+"local."
 
 #: template/help.php:12
 msgid "Pushing Local Development Data to a Staging&nbsp;Environment"
-msgstr ""
+msgstr "Cómo enviar los datos de desarrollo local a su sitio remoto"
 
 #: template/help.php:13
 msgid ""
 "This screencast demonstrates how you can push a local WordPress database "
 "you've been using for development to a staging environment."
 msgstr ""
+"Este screencast demuestra cómo puede enviar una base de datos de WordPress "
+"local que ha estado utilizando para el desarrollo a un entorno remoto."
 
 #: template/help.php:16
 msgid "Media Files Addon Demo"
-msgstr ""
+msgstr "Complemento de archivos multimedia"
 
 #: template/help.php:17
 msgid ""
 "A short demo of how the Media Files addon allows you to sync up your "
 "WordPress Media Libraries."
 msgstr ""
+"Una breve demostración de cómo el complemento de archivos multimedia le "
+"permite sincronizar sus bibliotecas multimedia de WordPress."
 
 #: template/help.php:24
 msgid "Support"
-msgstr ""
+msgstr "Ayuda"
 
 #: template/help.php:25
 msgid "Please report bugs or ask questions in the"
-msgstr ""
+msgstr "Por favor, informe de errores o haga preguntas en el"
 
 #: template/help.php:25
 msgid "GitHub Issue Tracker"
-msgstr ""
+msgstr "GitHub Issue Tracker"
 
 #: template/help.php:28
 msgid "Diagnostic Info &amp; Error Log"
-msgstr ""
+msgstr "Información de diagnóstico y registro de errores"
 
 #: template/help.php:30
 msgid "Clear Error Log"
-msgstr ""
+msgstr "Borrar registro de errores"
 
 #: template/help.php:33
 msgid "Videos"
-msgstr ""
+msgstr "Videos"
 
 #: template/migrate-progress.php:4
 msgid "Please wait while migration is running..."
-msgstr ""
+msgstr "Por favor, espere mientras se ejecuta la migración..."
 
 #: template/migrate-progress.php:7
 msgid "Establishing Connection"
-msgstr ""
+msgstr "Estableciendo conexión"
 
 #: template/migrate-progress.php:20
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: template/migrate.php:61 template/migrate.php:463
 msgid "Back to select a saved profile"
-msgstr ""
+msgstr "Volver a seleccionar un perfil guardado"
 
 #: template/migrate.php:70
 msgid "Export File"
-msgstr ""
+msgstr "Exportar archivo"
 
 #: template/migrate.php:76
 msgid "Save as file to your computer"
-msgstr ""
+msgstr "Guardar el archivo en tu computadora"
 
 #: template/migrate.php:83
 msgid "Compress file with gzip"
-msgstr ""
+msgstr "Comprimir archivo en gzip"
 
 #: template/migrate.php:92
 msgid "Pull"
-msgstr ""
+msgstr "Traer"
 
 #: template/migrate.php:92
 msgid "Replace this site's db with remote db"
-msgstr ""
+msgstr "Reemplace la base de datos de este sitio con la base de datos remota"
 
 #: template/migrate.php:101
 msgid "Push"
-msgstr ""
+msgstr "Empujar"
 
 #: template/migrate.php:101
 msgid "Replace remote db with this site's db"
-msgstr ""
+msgstr "Reemplace la base de datos remota con la base de datos de este sitio"
 
 #: template/migrate.php:110
 msgid "Connection Info - Site URL &amp; Secret Key"
-msgstr ""
+msgstr "Información de conexión - URL del sitio y clave secreta"
 
 #: template/migrate.php:116
 msgid "Connect"
-msgstr ""
+msgstr "Conectar"
 
 #: template/migrate.php:120
 msgid "SSL Disabled"
-msgstr ""
+msgstr "SSL Deshabilitado"
 
 #: template/migrate.php:120
 msgid ""
@@ -677,10 +796,13 @@ msgid ""
 "so we've switched to that. If you run a push or pull, your data will be "
 "transmitted unencrypted. Most people are fine with this, but just a heads up."
 msgstr ""
+"No podíamos conectar mediante SSL pero el http regular (no SSL) parece estar "
+"trabajando así que nos hemos cambiado a él. Si ejecuta un empuja o trae sus "
+"datos, se transmiten sin cifrar."
 
 #: template/migrate.php:128
 msgid "Version Mismatch"
-msgstr ""
+msgstr "La versión no coincide"
 
 #: template/migrate.php:128
 #, php-format
@@ -690,10 +812,14 @@ msgid ""
 "Please go to the <a href=\"%2$s\">Plugins page</a> on both installs and "
 "check for updates."
 msgstr ""
+"Hemos detectado que tienes la versión <span class=\"remote-version\"></span> "
+"de WP Sync DB a <span class=\"remote-location\"></span> pero estás usando la "
+"%1$s aquí. Por favor vaya a la <a href=\"%2$s\">Página de Plugins</a> en "
+"ambas instalaciones y compruebe si hay actualizaciones."
 
 #: template/migrate.php:132
 msgid "Cannot Access Uploads Directory"
-msgstr ""
+msgstr "No se puede acceder al directorio de carga:"
 
 #: template/migrate.php:134
 msgid ""
@@ -701,56 +827,61 @@ msgid ""
 "Without this permission exports are unavailable. Please grant 755 "
 "permissions on the following directory:"
 msgstr ""
+"Se requiere permisos de escritura para el directorio estándar de carga de "
+"WordPress. Sin este permiso las exportaciones no estarán disponibles. Por "
+"favor conceda permisos 755 en este directorio:"
 
 #: template/migrate.php:143
 msgid "Find"
-msgstr ""
+msgstr "Buscar"
 
 #: template/migrate.php:144
 msgid "Replace"
-msgstr ""
+msgstr "Reemplazar"
 
 #: template/migrate.php:147
 msgid ""
 "Doesn't look we have any replaces yet, <a href=\"#\" class=\"js-action-link "
 "add-replace\">add one?</a>"
 msgstr ""
+"No parece que tengamos reemplazos todavía, <a href=\"#\" class=\"js-action-"
+"link add-replace\">¿agregar uno?</a>"
 
 #: template/migrate.php:156
 msgid "Old value"
-msgstr ""
+msgstr "Valor anterior"
 
 #: template/migrate.php:162
 msgid "New Value"
-msgstr ""
+msgstr "Nuevo valor"
 
 #: template/migrate.php:172
 msgid "Old URL"
-msgstr ""
+msgstr "URL anterior"
 
 #: template/migrate.php:178
 msgid "New URL"
-msgstr ""
+msgstr "Nueva URL"
 
 #: template/migrate.php:188
 msgid "Old file path"
-msgstr ""
+msgstr "Path anterior"
 
 #: template/migrate.php:194
 msgid "New file path"
-msgstr ""
+msgstr "Path nuevo"
 
 #: template/migrate.php:206
 msgid "Old Value"
-msgstr ""
+msgstr "Valor anterior"
 
 #: template/migrate.php:212
 msgid "New value"
-msgstr ""
+msgstr "Nuevo valor"
 
 #: template/migrate.php:221
 msgid "Add Row"
-msgstr ""
+msgstr "Agregar fila"
 
 #: template/migrate.php:226
 #, php-format
@@ -760,6 +891,10 @@ msgid ""
 "what this URL should be, please consult <a href=\"%s\" target=\"_blank\">our "
 "documentation</a> on find and replace fields."
 msgstr ""
+"<strong>Falta la nueva URL</strong> &mdash; Por favor, introduzce el "
+"protocolo relativo de la URL del sitio remoto en el campo “Nueva URL”. Si no "
+"estás seguro de cuál debería ser la URL, consulta <a href=\"%s\" target="
+"\"_blank\">nuestra documentación</a> en “find and replace fields”."
 
 #: template/migrate.php:227
 #, php-format
@@ -769,45 +904,50 @@ msgid ""
 "of what the file path should be, please consult <a href=\"%s\" target="
 "\"_blank\">our documentation</a> on find and replace fields."
 msgstr ""
+"<strong>Falta el Path de archivos</strong> &mdash; Por favor, introduce la "
+"ruta del archivo raíz del sitio remoto en el campo “Nuevo Path” o elimina la "
+"fila completa. Si no estás seguro de cuál debería ser la ruta del archivo, "
+"consulta <a href=\"%s\" target=\"_blank\">nuestra documentación</a> en “find "
+"and replace fields”."
 
 #: template/migrate.php:235
 msgid "Tables"
-msgstr ""
+msgstr "Tablas"
 
 #: template/migrate.php:244
 msgid "Migrate all tables with prefix"
-msgstr ""
+msgstr "Migrar todas las tablas con el prefijo"
 
 #: template/migrate.php:250
 msgid "Migrate only selected tables below"
-msgstr ""
+msgstr "Migrar sólo las tablas seleccionadas"
 
 #: template/migrate.php:268 template/migrate.php:296 template/migrate.php:391
 #: template/settings.php:68
 msgid "Select All"
-msgstr ""
+msgstr "Seleccionar todas"
 
 #: template/migrate.php:270 template/migrate.php:298 template/migrate.php:393
 #: template/settings.php:70
 msgid "Deselect All"
-msgstr ""
+msgstr "Deseleccionar todas"
 
 #: template/migrate.php:272 template/migrate.php:300 template/migrate.php:395
 #: template/settings.php:72
 msgid "Invert Selection"
-msgstr ""
+msgstr "Invertir selección"
 
 #: template/migrate.php:280
 msgid "Exclude Post Types"
-msgstr ""
+msgstr "Excluir Post Types"
 
 #: template/migrate.php:308
 msgid "Advanced Options"
-msgstr ""
+msgstr "Opciones Avanzadas"
 
 #: template/migrate.php:317
 msgid "Replace GUIDs"
-msgstr ""
+msgstr "Reemplazar GUIDs"
 
 #: template/migrate.php:323
 #, php-format
@@ -818,50 +958,57 @@ msgid ""
 "example, you may be developing a new site locally at dev.somedomain.com and "
 "want to migrate the site live to somedomain.com."
 msgstr ""
+"Aunque en el <a href=\"%s\" target=\"_blank\">Codex de WordPress</a> se "
+"explica que no se deben cambiar los  GUIDs, esto se limita a sitios que ya "
+"están online. Si el sitio no ha sido publicado, te recomiendo reemplazar los "
+"GUIDs. Por ejemplo, cuando está desarrollando un nuevo sitio en dev."
+"somedomain.com y desea migrarlo a somedomain.com."
 
 #: template/migrate.php:329
 msgid "Exclude spam comments"
-msgstr ""
+msgstr "Excluir comentarios SPAM"
 
 #: template/migrate.php:335
 msgid ""
 "Do not migrate the 'active_plugins' setting (i.e. which plugins are "
 "activated/deactivated)"
-msgstr ""
+msgstr "No migrar la opción 'active_plugins' (Plugins activados/desactivados)"
 
 #: template/migrate.php:341
 msgid "Exclude"
-msgstr ""
+msgstr "Excluir"
 
 #: template/migrate.php:341
 msgid "transients"
-msgstr ""
+msgstr "temporales"
 
 #: template/migrate.php:341
 msgid "(temporary cached data)"
-msgstr ""
+msgstr "(datos en caché temporales)"
 
 #: template/migrate.php:352
 msgid ""
 "Backup the <span class=\"directory-scope\">local</span> database before "
 "replacing it"
 msgstr ""
+"Copia de seguridad de la base de datos <span class=\"directory-scope"
+"\">local</span> antes de reemplazarla"
 
 #: template/migrate.php:353
 msgid "An SQL file will be saved to"
-msgstr ""
+msgstr "Un archivo SQL se guardará en"
 
 #: template/migrate.php:361
 msgid "Backup all tables with prefix"
-msgstr ""
+msgstr "Copia de seguridad de todas las tablas con prefijo"
 
 #: template/migrate.php:367
 msgid "Backup only tables selected for migration"
-msgstr ""
+msgstr "Copia de seguridad solo de las tablas seleccionadas para la migración"
 
 #: template/migrate.php:373
 msgid "Backup only selected tables below"
-msgstr ""
+msgstr "Copia de seguridad solo las tablas seleccionadas a continuación"
 
 #: template/migrate.php:398
 #, php-format
@@ -871,22 +1018,27 @@ msgid ""
 "directory should have 755 permissions: <span class=\"upload-directory-"
 "location\">%s</span></p>"
 msgstr ""
+"La opción de copia de seguridad se ha inhabilitado porque su directorio de "
+"subidas <span class=\"directory-scope\">local</span> actualmente no tiene "
+"permiso de escritura. El siguiente directorio debe tener permisos 755: <span "
+"class=\"upload-directory-location\">%s</span></p>"
 
 #: template/migrate.php:406
 msgid "Save Migration Profile"
-msgstr ""
+msgstr "Guardar Perfil de Migración"
 
 #: template/migrate.php:406
 msgid "Save the above settings for the next time you do a similiar migration"
 msgstr ""
+"Guarde la configuración para la próxima vez que realice una migración similar"
 
 #: template/migrate.php:425
 msgid "Create new profile"
-msgstr ""
+msgstr "Crear un perfil nuevo"
 
 #: template/migrate.php:434 template/migrate.php:444
 msgid "Warning: Different Table Prefixes"
-msgstr ""
+msgstr "Alerta: Diferente Prefijo de Tablas."
 
 #: template/migrate.php:436
 msgid ""
@@ -895,6 +1047,10 @@ msgid ""
 "tables in your local database with prefix \"<span class=\"remote-prefix\"></"
 "span>\"."
 msgstr ""
+"¡Vaya! Hemos detectado que el prefijo de la tabla de base de datos difiere "
+"entre las instalaciones. Al hacer clic en el botón Migrar a continuación, "
+"crearás nuevas tablas de base de datos en su base de datos local con el "
+"prefijo \" <span class=\"remote-prefix\"></span> \"."
 
 #: template/migrate.php:438
 #, php-format
@@ -904,12 +1060,19 @@ msgid ""
 "will need to edit your local install's wp-config.php and change the \"%1$s\" "
 "variable to \"<span class=\"remote-prefix\"></span>\"."
 msgstr ""
+"Sin embargo, su instalación local está configurada para utilizar el prefijo "
+"de tabla \"%1$s\" e ignorará las tablas migradas. Así que, <b>DESPUÉS</b> de "
+"la migración es completa, necesitarás editar wp-config.php de la instalación "
+"local y cambiar la variable \"%1$s\" a \"<span class=\"remote-prefix\"></"
+"span>\"."
 
 #: template/migrate.php:440
 msgid ""
 "This will allow your local install the use the migrated tables. Once you do "
 "this, you shouldn't have to do it again."
 msgstr ""
+"Esto permitirá que tu instalación local use las tablas migradas. Una vez "
+"hecho esto, no tienes que hacerlo de nuevo."
 
 #: template/migrate.php:446
 #, php-format
@@ -918,6 +1081,9 @@ msgid ""
 "installations. Clicking the Migrate DB button below will create new database "
 "tables in the remote database with prefix \"%s\"."
 msgstr ""
+"¡Vaya! Hemos detectado que el prefijo de la tabla de base de datos difiere "
+"entre las instalaciones. Al hacer clic en el botón Migrar, se crearán nuevas "
+"tablas de base de datos en la base de datos remota con el prefijo \"%s\"."
 
 #: template/migrate.php:448
 #, php-format
@@ -928,37 +1094,48 @@ msgid ""
 "install's wp-config.php and change the \"<span class=\"remote-prefix\"></"
 "span>\" variable to \"%s\"."
 msgstr ""
+"Sin embargo, tu instalación remota está configurada para usar prefijo de "
+"tabla \"<span class=\"remote-prefix\"></span> e ignorará las tablas "
+"migradas. Por eso, <b>DESPUÉS</b> de completar la migración, tendrás que "
+"editar el archivo wp-config.php de u instalación remota y cambiar el\" <span "
+"class=\"remote-prefix\"></span> \"Variable\"%s \"."
 
 #: template/migrate.php:450
 msgid ""
 "This will allow your remote install the use the migrated tables. Once you do "
 "this, you shouldn't have to do it again."
 msgstr ""
+"Esto le permitirá a su instalación remota el uso de las tablas migradas. Una "
+"vez que hagas esto, no deberías tener que hacerlo de nuevo."
 
 #: template/migrate.php:456
 msgid "Save Profile"
-msgstr ""
+msgstr "Guardar Perfil"
 
 #: template/profile.php:2
 msgid "Would you like to use a saved migration profile?"
-msgstr ""
+msgstr "¿Te gustaría usar un perfil de migración guardado?"
 
 #: template/profile.php:7
 msgid "Nope, let's start fresh..."
-msgstr ""
+msgstr "No, vamos a empezar con uno nuevo..."
 
 #: template/settings.php:18
 msgid ""
 "Accept <b>pull</b> requests allow this database to be exported and downloaded"
 msgstr ""
+"Aceptar solicitudes de <b>extracción</b> para exportar y descargar esta base "
+"de datos."
 
 #: template/settings.php:24
 msgid "Accept <b>push</b> requests allow this database to be overwritten"
 msgstr ""
+"Aceptar solicitudes de <b>inserción</b> para que esta base de datos se "
+"sobrescriba"
 
 #: template/settings.php:30
 msgid "Enable SSL verification"
-msgstr ""
+msgstr "Habilitar verificación SSL"
 
 #: template/settings.php:34
 msgid ""
@@ -968,20 +1145,27 @@ msgid ""
 "an HTTPS connection is vulnerable to a man-in-the-middle attack, so we do "
 "recommend you configure your environment and enable this."
 msgstr ""
+"Desactivamos la verificación SSL por defecto ya que muchos de los entornos "
+"de las personas no lo tienen instalado para que funcione. Por ejemplo, con "
+"XAMPP, tienes que habilitar manualmente el OpenSSL editando el php.ini. Sin "
+"verificación de SSL, una conexión HTTPS es vulnerable a un ataque \"man in "
+"the middle\", así que le recomendamos configura su entorno y habilitar esto."
 
 #: template/settings.php:41
 msgid "Connection Info"
-msgstr ""
+msgstr "Información de conexión"
 
 #: template/settings.php:43
 msgid "Reset API Key"
-msgstr ""
+msgstr "Renovar Clave API"
 
 #: template/settings.php:49
 msgid ""
 "Improve performance and reliability by not loading the following plugins for "
 "migration requests"
 msgstr ""
+"Mejore el rendimiento y la confiabilidad al no cargar los siguientes plugins "
+"para solicitudes de migración"
 
 #: template/settings.php:53
 msgid ""
@@ -990,14 +1174,19 @@ msgid ""
 "fail. We recommend only loading plugins that affect migration requests, for "
 "example a plugin that hooks into WP Sync DB."
 msgstr ""
+"Algunos plugins agregan una gran cantidad de sobrecarga a cada solicitud, "
+"requiriendo memoria y CPU adicionales. Y algunos, incluso, interfieren con "
+"las migraciones y hacen que fallen. Recomendamos solo cargar plugins que "
+"afecten las solicitudes de migración, por ejemplo, uno que este relacionado "
+"con WP Sync DB."
 
 #: template/settings.php:75
 msgid "Save Changes"
-msgstr ""
+msgstr "Guardar cambios"
 
 #: template/settings.php:83
 msgid "Maximum Request Size"
-msgstr ""
+msgstr "Tamaño máximo de pedido"
 
 #: template/settings.php:86
 #, php-format
@@ -1008,23 +1197,30 @@ msgid ""
 "to get better performance. If you're getting a 413 error or having trouble "
 "with time outs, try throttling this setting down."
 msgstr ""
+"Hemos detectado que su servidor admite hasta %s peticiones, pero es posible "
+"que tenga limitaciones que no pudimos detectar. Para estar seguros, "
+"establecemos el valor predeterminado en 1 MB, pero puedes intentar "
+"acelerarlo para obtener un mejor rendimiento. Si está recibiendo un error "
+"413 o tiene problemas con los tiempos de espera, trate de modificar este "
+"ajuste."
 
-#. Plugin Name of the plugin/theme
-msgid "WP Sync DB"
-msgstr ""
+#~ msgid "Installed"
+#~ msgstr "Instalado"
 
-#. Plugin URI of the plugin/theme
-msgid "wp-sync-db/wp-sync-db"
-msgstr ""
+#~ msgid "Activated"
+#~ msgstr "Activado"
 
-#. Description of the plugin/theme
-msgid "Export, push, and pull to migrate your WordPress databases."
-msgstr ""
+#~ msgid "Activate"
+#~ msgstr "Activar"
 
-#. Author of the plugin/theme
-msgid "Sean Lang"
-msgstr ""
+#~ msgid "Install"
+#~ msgstr "Instalar"
 
-#. Author URI of the plugin/theme
-msgid "http://slang.cx"
-msgstr ""
+#~ msgid "Download"
+#~ msgstr "Descargar"
+
+#~ msgid "The license key is currently defined in wp-config.php."
+#~ msgstr "La licencia actual es definida en wp-config.php"
+
+#~ msgid "Activate License"
+#~ msgstr "Activar Licencia"
